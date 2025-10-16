@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+venv/
+
+# Output files
+*.xlsx
+*.csv
+
+# System files
+.DS_Store
+Thumbs.db
