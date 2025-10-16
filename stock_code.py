@@ -5,8 +5,8 @@ import xlsxwriter
 import math
 import yfinance as yf
 
+stocks = pd.read_csv("sp_500_stocks.csv", header=None)
 
-stocks=pd.read_csv(r"C:\Users\Krishna bharti\OneDrive\Desktop\isthis C chat\sp_500_stocks.csv",header=None)
 
 symbols=stocks[0].tolist()
 
@@ -17,7 +17,7 @@ final_Dataframe=pd.DataFrame(columns=my_columns)
 
 
 
-for i in symbols[:25]:
+for i in symbols:
     try:
         data=yf.Ticker(i)
         information=data.info
